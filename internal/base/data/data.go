@@ -28,12 +28,14 @@ func NewDB(debug bool, dataConf *Database) (*xorm.Engine, error) {
 		return nil, err
 	}
 
+	// debug mode
 	if debug {
 		engine.ShowSQL(true)
 	} else {
 		engine.SetLogLevel(ormlog.LOG_ERR)
 	}
 
+	// ping
 	if err = engine.Ping(); err != nil {
 		return nil, err
 	}
