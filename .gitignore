@@ -66,6 +66,7 @@ go.work.sum
 
 
 ##########
-.vscode
+.vscode/
 .air.toml
-http
+http/
+tmp/
