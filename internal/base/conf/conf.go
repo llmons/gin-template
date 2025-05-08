@@ -13,11 +13,11 @@ type AllConfig struct {
 }
 
 type Data struct {
-	Database data.Database `yaml:"database" json:"database"`
+	Database *data.Database `yaml:"database" json:"database"`
 }
 
 type Server struct {
-	HTTP server.HTTP `yaml:"http" json:"http"`
+	HTTP *server.HTTP `yaml:"http" json:"http"`
 }
 
 func ReadConfig(configFilePath string) (c *AllConfig, err error) {

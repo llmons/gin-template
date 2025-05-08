@@ -12,7 +12,7 @@ func main() {
 		panic(err)
 	}
 
-	app, cleanup, err := initApplication(c.Debug, &c.Data.Database, c.Server)
+	app, cleanup, err := initApplication(c.Debug, c.Data.Database, c.Server)
 	if err != nil {
 		panic(err)
 	}

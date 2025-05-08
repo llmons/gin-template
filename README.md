@@ -103,7 +103,7 @@ This project uses [Wire](https://github.com/google/wire) for dependency injectio
 
 ```bash
 # Generate wire_gen.go after adding or modifying providers
-wire ./cmd
+wire ./cmd/wire.go
 ```
 
 ## License
